@@ -1,4 +1,4 @@
-package com.smartchain.server.entity
+package com.smartchain.server.entity.input
 
 class Access (
         val device_id: String,
