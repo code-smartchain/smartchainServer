@@ -4,21 +4,19 @@ import info.laht.yajrpc.RpcParams
 import info.laht.yajrpc.net.ws.RpcWebSocketClient
 
 class RpcWs (
-        val url: String,
-        val port: Int
+        url: String,
+        port: Int
 ) {
 
-    val con: RpcWebSocketClient
+    private val con = RpcWebSocketClient(url, port)
 
-    init {
-        con = RpcWebSocketClient(url, port)
+    fun <T> call(methodName: String, params: RpcParams?, resultClass: Class<T>): T? {
+        val notNullParams = params ?: RpcParams.mapParams()
+
+        return con.write(methodName, notNullParams).get().getResult(resultClass)
     }
 
-    public fun <T> call(methodName: String, params: RpcParams, resultClass: Class<T>): T? {
-        return con.write(methodName, params).get().getResult(resultClass)
-    }
-
-    public fun closeConnection() {
+    fun closeConnection() {
         con.close()
     }
 }
