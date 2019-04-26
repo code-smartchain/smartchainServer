@@ -14,7 +14,7 @@ class UserController {
 
     @GetMapping("/new")
     fun registerNewClient (): ResponseEntity<*> {
-        val userInstanceId = userService.registerUser()
+        val userInstanceId = userService.registerUser2()
 
         return ResponseEntity.ok().body(userInstanceId)
     }
@@ -26,23 +26,23 @@ class UserController {
         return ResponseEntity.ok().body(response)
     }
 
-    @PostMapping("/call/create_access")
-    fun createAccess (@RequestBody access: Access): ResponseEntity<*> {
-        val response = userService.createAccess(access)
+    @PostMapping("/call/create_access/{agentAnimal}")
+    fun createAccess (@PathVariable agentAnimal: String, @RequestBody access: Access): ResponseEntity<*> {
+        val response = userService.createAccess(access, agentAnimal)
 
         return ResponseEntity.ok().body(response)
     }
 
-    @PostMapping("call/send_access")
-    fun sendAccess (@RequestBody sendAccessInfo: SendAccessInfo): ResponseEntity<*> {
-        val response = userService.sendAccess(sendAccessInfo)
+    @PostMapping("call/send_access/{agentAnimal}")
+    fun sendAccess (@PathVariable agentAnimal: String, @RequestBody sendAccessInfo: SendAccessInfo): ResponseEntity<*> {
+        val response = userService.sendAccess(sendAccessInfo, agentAnimal)
 
         return ResponseEntity.ok().body(response)
     }
 
-    @PostMapping("call/get_accesses")
-    fun getMyAccesses (): ResponseEntity<*> {
-        val response = userService.getMyAccesses()
+    @PostMapping("call/get_accesses/{agentAnimal}")
+    fun getMyAccesses (@PathVariable agentAnimal: String): ResponseEntity<*> {
+        val response = userService.getMyAccesses(agentAnimal)
 
         return ResponseEntity.ok().body(response)
     }

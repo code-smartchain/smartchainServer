@@ -5,7 +5,8 @@ import com.smartchain.server.entity.config.InstanceConfig
 import com.smartchain.server.entity.config.InterfaceConfig
 
 class User (
-        val agentConfig: AgentConfig,
-        val instanceConfig: InstanceConfig,
-        val interfaceConfig: InterfaceConfig
+        val animal: String,
+        val publicAddress: String,
+        val port: Int,
+        val agentAddress: String
 )

@@ -1,23 +1,24 @@
 package com.smartchain.server.service
 
+import com.smartchain.server.entity.Ok
+import com.smartchain.server.entity.Success
 import com.smartchain.server.entity.config.AgentConfig
 import com.smartchain.server.entity.config.InstanceConfig
 import com.smartchain.server.entity.config.InterfaceConfig
 import info.laht.yajrpc.RpcParams
+import info.laht.yajrpc.YAJRPC
 
 class AdminConductor (
         private val ws: RpcWs
 ) {
 
-    fun startNewAgent(agentConfig: AgentConfig, instanceConfig: InstanceConfig, interfaceConfig: InterfaceConfig): String {
+    fun startNewAgent(agentConfig: AgentConfig, instanceConfig: InstanceConfig, interfaceConfig: InterfaceConfig) {
 
         addAgent(agentConfig)
         addInstance(instanceConfig)
         startInstance(instanceConfig.id)
         addInterface(interfaceConfig)
         addInstanceToInterface(instanceConfig.id, interfaceConfig.id)
-
-        return instanceConfig.id
     }
 
     private fun addAgent(agentConfig: AgentConfig) {
@@ -28,7 +29,7 @@ class AdminConductor (
                 "keystore_file" to agentConfig.keystoreFile
         )
 
-        val response =  ws.call("admin/agentId/add", params, String::class.java)
+        val response =  ws.call("admin/agent/add", params, Success::class.java)
     }
 
     private fun addInstance(instanceConfig: InstanceConfig) {
@@ -38,7 +39,9 @@ class AdminConductor (
                 "dna_id" to instanceConfig.dnaId
         )
 
-        val response =  ws.call("admin/instance/add", params, String::class.java)
+        val a = "A)=B&7"
+
+        val response =  ws.call("admin/instance/add", params, Success::class.java)
     }
 
     private fun startInstance(id: String) {
@@ -46,7 +49,7 @@ class AdminConductor (
                 "id" to id
         )
 
-        val response =  ws.call("admin/instance/start", params, String::class.java)
+        val response =  ws.call("admin/instance/start", params, Success::class.java)
     }
 
     private fun addInterface(interfaceConfig: InterfaceConfig) {
@@ -57,7 +60,7 @@ class AdminConductor (
                 "admin" to interfaceConfig.admin
         )
 
-        val response =  ws.call("admin/interface/add", params, String::class.java)
+        val response =  ws.call("admin/interface/add", params, Success::class.java)
     }
 
     private fun addInstanceToInterface(instanceId: String, interfaceId: String) {
@@ -66,6 +69,6 @@ class AdminConductor (
                 "interface_id" to interfaceId
         )
 
-        val response =  ws.call("admin/interface/add_instance", params, String::class.java)
+        val response =  ws.call("admin/interface/add_instance", params, Success::class.java)
     }
 }
