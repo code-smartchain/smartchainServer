@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
+@CrossOrigin
 @RequestMapping("/client", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
 class UserController {
     val userService = UserService()
@@ -40,7 +41,7 @@ class UserController {
         return ResponseEntity.ok().body(response)
     }
 
-    @PostMapping("call/get_accesses/{agentAnimal}")
+    @GetMapping("call/get_accesses/{agentAnimal}")
     fun getMyAccesses (@PathVariable agentAnimal: String): ResponseEntity<*> {
         val response = userService.getMyAccesses(agentAnimal)
 
