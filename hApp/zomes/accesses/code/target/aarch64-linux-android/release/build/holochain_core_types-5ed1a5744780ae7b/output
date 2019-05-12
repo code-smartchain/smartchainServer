@@ -1,0 +1,2 @@
+cargo:rustc-env=GIT_HASH=0652f1f4dde9dc085218e960ac0d91e6223daac6
+

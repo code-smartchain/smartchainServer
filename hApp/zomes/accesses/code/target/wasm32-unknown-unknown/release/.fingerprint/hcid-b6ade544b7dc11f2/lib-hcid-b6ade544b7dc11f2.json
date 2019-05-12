@@ -1,0 +1,1 @@
+{"rustc":4705020412903249216,"features":"[]","target":32876888061257835,"profile":5060393583489210841,"path":581583097314779595,"deps":[["data-encoding v2.1.2","data_encoding",8489315578186782709],["reed-solomon v0.2.1","reed_solomon",7129182214321171971]],"local":[{"Precalculated":"0.0.3-alpha"}],"rustflags":[],"edition":"Edition2018"}

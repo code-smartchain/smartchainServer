@@ -1,0 +1,518 @@
+Using config path: ../conductor-config2.toml
+Unlocking agent keys:
+Unlocking key for agent 'test_agent1': 
+Reading keystore from /Users/jonny/Desktop/SmartChain/SmartChain/smartchainServer/keys/HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz
+Passphrase: Spawning network with working directory: /tmp
+(n3h-bin) [w] attempting read stdin
+(n3h-bin) [w] got stdin config! {"webproxy":{"connection":{"rsaBits":1024,"bind":["wss://0.0.0.0:0/"]},"wssAdvertise":"auto","wssRelayPeers":null}}
+(n3h-bin) [i] executing mode HACK
+(*n3hMode*) [i] @@ CONFIG @@ {
+  "ipc": {
+    "connection": {
+      "rsaBits": 1024,
+      "bind": [
+        "wss://127.0.0.1:0/"
+      ]
+    }
+  },
+  "webproxy": {
+    "connection": {
+      "rsaBits": 1024,
+      "bind": [
+        "wss://0.0.0.0:0/"
+      ]
+    },
+    "wssAdvertise": "auto",
+    "wssRelayPeers": null
+  }
+}
+(wss-server-utils) [i] loaded rsa fingerprint nTPbVMQJp9Pyo2iWO/TJhPYUaG4=
+(wss-connection) [i] listening at wss://127.0.0.1:62077/
+(p2p-backend) [i] peerId: HcSCJT86aBmbAfx7va3O8eSZQHmTxicmntImn559quaUjh4hUV7QIM4V3PNnxtr
+(wss-server-utils) [i] loaded rsa fingerprint nTPbVMQJp9Pyo2iWO/TJhPYUaG4=
+(wss-connection) [i] listening at wss://192.168.178.28:62079/
+(@hackmode@) [i] p2p bound wss://192.168.178.28:62079/?a=HcSCJT86aBmbAfx7va3O8eSZQHmTxicmntImn559quaUjh4hUV7QIM4V3PNnxtr
+Network spawned with bindings:
+	 - ipc: wss://127.0.0.1:62077/
+	 - p2p: ["wss://192.168.178.28:62079/?a=HcSCJT86aBmbAfx7va3O8eSZQHmTxicmntImn559quaUjh4hUV7QIM4V3PNnxtr"]
+Reading DNA from ./dist/hApp.dna.json
+Failed to load instance smartchain from storage: ErrorGeneric("State could not be loaded due to NoneError")
+Initializing new chain...
+WARNING! The git-hash of the runtime and the zome don't match.
+Runtime hash: b09de07693bac4e4675e87e2c598e22a9aaedb93
+Zome hash: 0652f1f4dde9dc085218e960ac0d91e6223daac6
+2019-04-29 21:45:40:[33msmartchain[0m: [33mdna/initialize: Couldn't get DNA and agent from chain: ErrorGeneric("Agent entry not found")[0m
+2019-04-29 21:45:40:[33msmartchain[0m: [33mdna/initialize: Initializing new chain from given DNA...[0m
+2019-04-29 21:45:41:[33msmartchain[0m: [33mdebug/initialize: created public token: HashString("QmRzdsji8WM5eHx2jZwcjNZ2pVumCf8Dhuo5ibXtiRnnmW")[0m
+Successfully loaded 1 instance configurations
+Starting all of them...
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/conductor: Holochain App Name instantiated[0m
+Starting instance "smartchain"...
+Starting interfaces...
+2019-04-29 21:45:43:[34mconductor[0m: [31merr/conductor: Error running interface 'websocket_interface': Io Error: Address already in use (os error 48)[0m
+Done.
+Starting UI servers
+Starting all servers
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), provider_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", entry_address: HashString("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), "provenances": Array([Array([String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), String("J6Df9tFtikpVv+5//1cMUKEgbLtqfQ0rbrlCPlCELGSwUgqx6l0ZQrvKny1G/swgoQ512iXUS5zjcTqyrNevBw==")])]), "link": String("Qmf46z6FKTJgGKne5g6AnGskp9GwhG3GiqgjuGh1hg38H7"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-04-29T19:45:41+00:00")})}) }[0m
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/net/handle: HandleSendMessage: MessageData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), request_id: "puid-1-3", to_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", from_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", content: Object({"RequestValidationPackage": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz")}) }[0m
+2019-04-29 21:45:43:[33msmartchain[0m: [33mSending validation package of entry HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz to agent HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/net/handle: SendMessageResult: MessageData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), request_id: "puid-1-3", to_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", from_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", content: Object({"ValidationPackage": Object({"chain_header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), "provenances": Array([Array([String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), String("J6Df9tFtikpVv+5//1cMUKEgbLtqfQ0rbrlCPlCELGSwUgqx6l0ZQrvKny1G/swgoQ512iXUS5zjcTqyrNevBw==")])]), "link": String("Qmf46z6FKTJgGKne5g6AnGskp9GwhG3GiqgjuGh1hg38H7"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-04-29T19:45:41+00:00")}), "source_chain_entries": Null, "source_chain_headers": Null, "custom": Null})}) }[0m
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/workflow/hold_entry: got validation package[0m
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/workflow/hold_entry: is valid! HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
+2019-04-29 21:45:43:[33msmartchain[0m: [33mdebug/workflow/hold_entry: HOLDING: HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: ignoring, same id[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), provider_agent_id: "HcScjoDi883QqQ3qk6RS9aPMOSExzupi6n9GyobY8S4ThrqubjtC47QTzIqq5ri", entry_address: HashString("HcScjoDi883QqQ3qk6RS9aPMOSExzupi6n9GyobY8S4ThrqubjtC47QTzIqq5ri"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcScjoDi883QqQ3qk6RS9aPMOSExzupi6n9GyobY8S4ThrqubjtC47QTzIqq5ri")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcScjoDi883QqQ3qk6RS9aPMOSExzupi6n9GyobY8S4ThrqubjtC47QTzIqq5ri"), "provenances": Array([Array([String("HcScjoDi883QqQ3qk6RS9aPMOSExzupi6n9GyobY8S4ThrqubjtC47QTzIqq5ri"), String("chpI6Llm/WbWyzaeOSYq5IAAKWaCX1QnrUmJSeamNpaa3f1GjtLQz5L4XxAe8NB5EGaJBEZinsYeZimyMTBqAA==")])]), "link": String("QmYxoeF3tjNRyNwhgZPdbK5FCxaUk6nSktP2MthQu6yvH5"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-04-29T14:03:36+00:00")})}) }[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), provider_agent_id: "HcScJzmQACi64q85558sPuhMnf6Hmj4xm3xRSvpw754x99Y4rp7mTQEc3U9odvi", entry_address: HashString("HcScJzmQACi64q85558sPuhMnf6Hmj4xm3xRSvpw754x99Y4rp7mTQEc3U9odvi"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcScJzmQACi64q85558sPuhMnf6Hmj4xm3xRSvpw754x99Y4rp7mTQEc3U9odvi")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcScJzmQACi64q85558sPuhMnf6Hmj4xm3xRSvpw754x99Y4rp7mTQEc3U9odvi"), "provenances": Array([Array([String("HcScJzmQACi64q85558sPuhMnf6Hmj4xm3xRSvpw754x99Y4rp7mTQEc3U9odvi"), String("9XUtwzyKrhM3it8mQtUV+Eu9mcMMD5121uAbF3TG8pwS6UV39eKUSLwQfQhaylGO/PKFIeaxyY3EfwEPxStpCg==")])]), "link": String("QmSKrnnm1k6yff71zU9sbaHmZ3fvNJs456ESHjY8fENHcb"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-04-29T14:05:05+00:00")})}) }[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), provider_agent_id: "HcScIatqQHkuv39azjxM5KExROzrvvjy53A3K5ikvoAeud5x6ozp478RqPpmhpr", entry_address: HashString("HcScIatqQHkuv39azjxM5KExROzrvvjy53A3K5ikvoAeud5x6ozp478RqPpmhpr"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcScIatqQHkuv39azjxM5KExROzrvvjy53A3K5ikvoAeud5x6ozp478RqPpmhpr")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcScIatqQHkuv39azjxM5KExROzrvvjy53A3K5ikvoAeud5x6ozp478RqPpmhpr"), "provenances": Array([Array([String("HcScIatqQHkuv39azjxM5KExROzrvvjy53A3K5ikvoAeud5x6ozp478RqPpmhpr"), String("BdviVicL8FXpIOe3HEkAg2C5c9wom7QZUVctlp4XHYeZMJikD3hSV1Lk7XKHlBWfx7cA6DNveJxSA8xSMICYBg==")])]), "link": String("QmP2Bi5eN2TMM1eaMBgZnB948Rv4qJoKts8jitC5hFr7S6"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-04-29T14:03:21+00:00")})}) }[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: ignoring, same id[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: ignoring, same id[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: ignoring, same id[0m
+2019-04-29 21:45:45:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmSVdYXip9Fw43AqyorenFgr1P7rMXCNqv1N31iEjsp4MY"), provider_agent_id: "HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz", entry_address: HashString("HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz"), "provenances": Array([Array([String("HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz"), String("YxgwkSO68dRwemjHbK/SC0lutZuVTjXFBMk4VrJwzJBkfXO3HCUAAObIxlXxqdVOBUWkPcmrgFIFLdS+S+NyBw==")])]), "link": String("QmeBJCF1s1UW48jiK3ThWfY1LwTPpMxs9GSoa4WfzXUeRW"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-04-29T14:00:56+00:00")})}) }[0m
+2019-04-29 21:45:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           2019-04-29 21:45:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+in[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    2019-04-29 21:45:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:31:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+in[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+bs: tick[0m
+2019-04-29 21:52:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:31:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+in[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+in[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+in[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            2019-04-29 21:45:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:45:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:46:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:47:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:48:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:50:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:51:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly
+m
+2019-04-29 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-04-29 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+(n3h-bin) [i] n3h exited cleanly

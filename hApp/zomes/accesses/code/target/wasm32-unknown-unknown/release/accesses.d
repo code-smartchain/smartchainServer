@@ -1,0 +1,1 @@
+/Users/jonny/Desktop/SmartChain/SmartChain/smartchainhApp/hApp/zomes/accesses/code/target/wasm32-unknown-unknown/release/accesses.wasm: /Users/jonny/Desktop/SmartChain/SmartChain/smartchainhApp/hApp/zomes/accesses/code/src/lib.rs

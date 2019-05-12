@@ -1,0 +1,1 @@
+{"rustc":4705020412903249216,"features":"[\"alloc\", \"cloudabi\", \"default\", \"fuchsia-cprng\", \"libc\", \"rand_core\", \"std\", \"winapi\"]","target":15766586587675603541,"profile":5060393583489210841,"path":13008666334926816881,"deps":[["rand_core v0.3.1","rand_core",262431711008091096]],"local":[{"Precalculated":"0.5.6"}],"rustflags":[],"edition":"Edition2015"}
