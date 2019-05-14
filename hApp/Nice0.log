@@ -1,412 +1,85 @@
 Using config path: ../conductor-config2.toml
 Unlocking agent keys:
 Unlocking key for agent 'test_agent1': 
-Reading keystore from /Users/martinzaubitzer/Desktop/HolochainTest/smartchainServer/keys/HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz
+Reading keystore from ../server/keys/HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz
 Passphrase: Reading DNA from ./dist/hApp.dna.json
 Failed to load instance smartchain from storage: ErrorGeneric("State could not be loaded due to NoneError")
 Initializing new chain...
 WARNING! The git-hash of the runtime and the zome don't match.
 Runtime hash: b09de07693bac4e4675e87e2c598e22a9aaedb93
 Zome hash: 0652f1f4dde9dc085218e960ac0d91e6223daac6
-2019-05-10 11:28:13:[33msmartchain[0m: [33mdna/initialize: Couldn't get DNA and agent from chain: ErrorGeneric("Agent entry not found")[0m
-2019-05-10 11:28:13:[33msmartchain[0m: [33mdna/initialize: Initializing new chain from given DNA...[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/initialize: created public token: HashString("QmUVW3iqYe2LfF8qMzpxfBeTpuQVmbJWPCPXtouuv6DPtx")[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdna/initialize: Couldn't get DNA and agent from chain: ErrorGeneric("Agent entry not found")[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdna/initialize: Initializing new chain from given DNA...[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/initialize: created public token: HashString("QmUVW3iqYe2LfF8qMzpxfBeTpuQVmbJWPCPXtouuv6DPtx")[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmTEYUZdsigrvtu5HKejiDvxmRcHGKy5oCE4kvcA6L5kdi"), provider_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", entry_address: HashString("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), "provenances": Array([Array([String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), String("J6Df9tFtikpVv+5//1cMUKEgbLtqfQ0rbrlCPlCELGSwUgqx6l0ZQrvKny1G/swgoQ512iXUS5zjcTqyrNevBw==")])]), "link": String("QmWVLa9gpELRYmH6jUvY1avQjvUrfHqq5eqh6tLrUvBfTR"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-05-14T13:26:20+00:00")})}) }[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/conductor: Holochain App Name instantiated[0m
 Successfully loaded 1 instance configurations
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/conductor: Holochain App Name instantiated[0m
 Starting all of them...
 Starting instance "smartchain"...
 Starting interfaces...
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/net/handle: HandleStoreEntry: EntryData { dna_address: HashString("QmTEYUZdsigrvtu5HKejiDvxmRcHGKy5oCE4kvcA6L5kdi"), provider_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", entry_address: HashString("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), entry_content: Object({"entry": Object({"AgentId": Object({"nick": String("Tester1"), "pub_sign_key": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz")})}), "header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), "provenances": Array([Array([String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), String("J6Df9tFtikpVv+5//1cMUKEgbLtqfQ0rbrlCPlCELGSwUgqx6l0ZQrvKny1G/swgoQ512iXUS5zjcTqyrNevBw==")])]), "link": String("QmbKHuf77AbmoxqutmhGQuEHHdrfXVpKWeHrHk8eCsZgxY"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-05-10T09:28:14+00:00")})}) }[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/net/handle: HandleSendMessage: MessageData { dna_address: HashString("QmTEYUZdsigrvtu5HKejiDvxmRcHGKy5oCE4kvcA6L5kdi"), request_id: "puid-1-3", to_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", from_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", content: Object({"RequestValidationPackage": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz")}) }[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/net/handle: HandleSendMessage: MessageData { dna_address: HashString("QmTEYUZdsigrvtu5HKejiDvxmRcHGKy5oCE4kvcA6L5kdi"), request_id: "puid-1-3", to_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", from_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", content: Object({"RequestValidationPackage": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz")}) }[0m
 Done.
 Starting UI servers
 Starting all servers
-2019-05-10 11:28:14:[34mconductor[0m: [31merr/conductor: Error running interface 'websocket_interface': Io Error: Address already in use (os error 48)[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mSending validation package of entry HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz to agent HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/net/handle: SendMessageResult: MessageData { dna_address: HashString("QmTEYUZdsigrvtu5HKejiDvxmRcHGKy5oCE4kvcA6L5kdi"), request_id: "puid-1-3", to_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", from_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", content: Object({"ValidationPackage": Object({"chain_header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), "provenances": Array([Array([String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), String("J6Df9tFtikpVv+5//1cMUKEgbLtqfQ0rbrlCPlCELGSwUgqx6l0ZQrvKny1G/swgoQ512iXUS5zjcTqyrNevBw==")])]), "link": String("QmbKHuf77AbmoxqutmhGQuEHHdrfXVpKWeHrHk8eCsZgxY"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-05-10T09:28:14+00:00")}), "source_chain_entries": Null, "source_chain_headers": Null, "custom": Null})}) }[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/workflow/hold_entry: got validation package[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/workflow/hold_entry: is valid! HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
-2019-05-10 11:28:14:[33msmartchain[0m: [33mdebug/workflow/hold_entry: HOLDING: HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz20192019-05-10 11:28:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:28:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:28:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:28:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:29:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 11:29:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:29:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:29:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:29:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:29:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:30:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:30:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:30:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:30:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:30:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:30:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:31:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:31:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:31:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:31:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:31:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:31:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 11:32:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-10 11:32:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:32:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:32:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:32:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:32:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:33:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:33:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:33:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:33:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:35:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:35:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:35:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:35:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:37:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:38:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:38:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 11:38:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 12:05:02:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 17:49:25:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 17:49:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 17:49:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 17:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 17:50:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:00:07:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:00:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:00:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 18:01:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-10 18:01:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:01:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:01:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 18:16:43:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 18:16:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 18:17:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 18:17:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-10 18:24:38:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:24:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 18:24:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 18:25:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 18:25:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 20:25:18:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-10 20:25:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 22:25:33:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-10 22:25:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-10 22:26:11:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 22:26:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 22:26:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-10 22:26:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 23:34:27:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-10 23:34:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-10 23:34:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-11 10:15:03:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-11 16:44:59:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-11 16:45:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-11 16:45:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 08:15:03:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 08:15:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 08:15:22:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 16:15:18:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 16:15:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 16:15:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 16:15:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:12:05:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:12:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:12:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:12:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:12:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:12:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:13:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:13:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:13:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:13:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:13:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:13:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:14:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:14:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:14:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:14:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:14:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:14:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:15:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:15:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:15:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:15:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:15:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:15:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:16:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:16:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:16:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:16:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:16:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:16:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:17:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:17:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:17:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:17:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:17:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:17:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:18:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:18:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:18:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:18:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:18:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:18:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:19:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:19:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:19:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:19:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:19:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:19:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:20:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:20:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:20:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:20:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:20:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:20:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:21:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:21:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:21:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:21:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:21:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:21:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:22:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:22:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:22:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:22:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:22:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:22:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:23:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:23:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:23:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:23:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:23:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:23:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:24:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:24:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:24:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:24:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:24:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:24:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:25:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:25:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:25:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:25:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:25:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:25:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:26:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:26:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:26:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:26:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:26:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:26:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:27:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:27:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:27:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:27:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:27:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:27:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:28:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:28:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:28:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:28:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:28:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:28:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:29:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:29:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:29:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:29:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:29:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:29:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:30:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:30:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:30:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:30:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:30:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:30:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:31:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:31:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:31:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:31:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:31:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:31:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:32:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:32:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:32:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:32:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:32:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:32:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:33:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:33:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:33:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:33:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:33:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:33:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:34:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:34:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:34:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:34:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:34:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:34:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:35:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:35:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:35:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:35:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:35:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:35:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:36:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:36:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:36:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:36:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:36:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:36:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:37:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:38:16:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:38:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 20:38:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:38:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:38:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:39:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 20:39:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 20:39:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 20:39:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:21:04:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:21:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:21:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:21:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:21:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:21:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:22:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:22:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:22:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:22:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:22:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:22:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:23:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:23:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:23:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:23:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:23:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:23:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:24:01:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:24:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:24:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:24:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:24:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:24:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:25:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:25:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:25:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:25:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:25:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:25:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:26:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:26:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:26:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:26:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:26:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:26:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:27:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:27:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:27:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:27:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:27:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:27:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:28:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:28:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:28:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:28:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:28:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:28:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:29:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:29:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:29:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:29:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:29:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:29:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:30:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:30:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:30:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:30:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:30:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:30:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:31:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:31:11:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:31:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:31:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:31:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:31:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:32:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:32:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:32:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:32:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:32:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:32:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:33:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:33:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:33:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:33:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:33:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:33:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:34:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:34:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:34:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:34:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:34:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:34:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:35:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:35:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:35:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:35:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:35:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:35:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:36:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:36:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:36:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:36:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:36:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:36:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:37:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:37:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:37:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:37:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:37:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:37:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:38:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:38:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:38:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:38:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:38:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:38:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:39:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:39:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:39:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:39:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:39:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:39:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:40:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:40:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:40:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:40:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:40:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:40:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:41:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:41:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:41:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:41:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:41:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:41:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:42:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:42:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:42:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:42:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:42:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:42:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:43:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:43:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:43:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:43:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:43:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:43:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:44:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:44:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:44:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:44:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:44:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:44:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:45:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:45:11:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:45:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:45:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:45:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:45:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:46:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:46:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:46:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:46:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:46:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:46:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:47:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:47:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:47:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:47:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:47:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:47:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:48:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:48:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:48:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:48:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:48:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:48:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:49:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:49:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:49:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:49:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:49:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:49:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:50:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:50:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:50:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:50:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:50:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:50:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:51:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:51:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:51:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:51:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:51:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:51:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:52:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:52:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:52:21:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:52:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:52:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:52:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:53:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:53:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:53:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:53:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:53:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:53:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:54:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:54:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:54:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:54:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:54:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:54:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:55:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:55:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:55:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:55:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:55:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:55:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:56:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:56:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:56:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:56:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:56:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:56:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:57:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:57:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:57:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:57:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:57:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:57:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:58:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:58:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:58:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:58:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:58:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:58:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 21:59:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 21:59:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:59:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:59:31:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 21:59:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 21:59:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:00:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:00:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:00:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:00:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:00:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:00:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:01:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:01:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:01:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:01:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:01:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:01:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:02:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:02:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:02:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:02:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:02:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:02:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:03:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:03:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:03:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:03:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:03:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:03:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:04:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:04:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:04:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:04:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:04:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:04:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:05:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:05:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:05:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:05:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:05:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:05:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:06:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:06:11:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:06:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:06:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:06:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:06:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:07:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:07:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:07:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:07:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:07:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:07:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:08:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:08:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:08:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:08:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:08:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:08:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:09:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:09:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:09:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:09:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:09:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:09:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:10:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:10:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:10:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:10:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:10:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:10:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:11:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:11:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:11:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:11:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:11:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:11:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:12:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:12:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:12:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:12:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:12:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:12:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:13:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:13:11:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:13:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:13:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:13:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:13:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:14:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:14:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:14:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:14:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:14:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:14:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:15:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:15:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:15:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:15:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:15:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:15:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:16:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:16:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:16:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:16:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:16:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:16:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:17:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:17:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:17:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:17:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:17:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:17:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:18:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:18:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:18:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:18:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:18:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:18:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:19:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:19:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:19:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:19:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:19:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:19:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:20:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:20:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:20:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:20:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:20:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:20:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:21:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:21:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:21:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:21:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:21:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:21:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:22:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:22:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:22:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:22:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:22:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:22:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:23:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:23:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:23:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:23:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:23:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:23:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:24:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:24:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:24:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:24:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:24:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:24:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:25:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:25:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:25:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:25:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:25:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:25:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:26:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:26:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:26:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:26:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:26:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:26:51:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:27:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:27:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:27:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-2019-05-12 22:27:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-20192019-05-12 22:27:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick20192019-05-12 22:27:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick2019-05-12 22:28:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
-[0m
-2019-05-12 22:28:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mSending validation package of entry HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz to agent HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
+2019-05-14 15:26:20:[34mconductor[0m: [31merr/conductor: Error running interface 'websocket_interface': Io Error: Address already in use (os error 48)[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/net/handle: SendMessageResult: MessageData { dna_address: HashString("QmTEYUZdsigrvtu5HKejiDvxmRcHGKy5oCE4kvcA6L5kdi"), request_id: "puid-1-3", to_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", from_agent_id: "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz", content: Object({"ValidationPackage": Object({"chain_header": Object({"entry_type": String("AgentId"), "entry_address": String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), "provenances": Array([Array([String("HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"), String("J6Df9tFtikpVv+5//1cMUKEgbLtqfQ0rbrlCPlCELGSwUgqx6l0ZQrvKny1G/swgoQ512iXUS5zjcTqyrNevBw==")])]), "link": String("QmWVLa9gpELRYmH6jUvY1avQjvUrfHqq5eqh6tLrUvBfTR"), "link_same_type": Null, "link_update_delete": Null, "timestamp": String("2019-05-14T13:26:20+00:00")}), "source_chain_entries": Null, "source_chain_headers": Null, "custom": Null})}) }[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/workflow/hold_entry: got validation package[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/workflow/hold_entry: is valid! HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
+2019-05-14 15:26:20:[33msmartchain[0m: [33mdebug/workflow/hold_entry: HOLDING: HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz[0m
+2019-05-14 15:26:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:26:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:26:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:27:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:27:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:27:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:27:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:27:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:27:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:28:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:28:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:28:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:28:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:28:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:28:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:29:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:29:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:29:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:29:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:29:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:29:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:30:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:30:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:30:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:30:31:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:30:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:30:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:31:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:31:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:31:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:31:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:31:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:31:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:40:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:32:50:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+-05-14 15:33:00:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:10:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:20:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:30:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m
+2019-05-14 15:33:41:[33msmartchain[0m: [33mdebug/scheduled_jobs: tick[0m

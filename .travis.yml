@@ -70,4 +70,4 @@ deploy:
     script: ./deploy.sh
     skip_cleanup: true
     on:
-      branch: development
+      branch: master
