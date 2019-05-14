@@ -36,10 +36,7 @@ before_install:
   - export PATH=$PWD/hc:$PATH
 
 install:
-  - curl -s https://static.rust-lang.org/rustup.sh > /home/install.sh
-  - chmod +x /home/install.sh
-  - sh /home/install.sh --disable-sudo -y
-
+  - curl https://sh.rustup.rs -sSf | bash -s -- -y
   - rustup toolchain install nightly-2019-01-24
   - rustup default nightly-2019-01-24
   - rustup target add wasm32-unknown-unknown --toolchain nightly-2019-01-24
