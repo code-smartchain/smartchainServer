@@ -1,4 +1,4 @@
 FROM openjdk:10-jre-slim
     WORKDIR /home
-    COPY build/libs .
-    CMD ["java", "-jar", "tracking-ingestion-service.jar"]
+    COPY server/build/libs .
+    CMD ["java", "-jar", "server-0.0.1-SNAPSHOT.jar"]
