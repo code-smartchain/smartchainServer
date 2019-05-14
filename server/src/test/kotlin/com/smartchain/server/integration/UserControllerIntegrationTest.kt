@@ -3,7 +3,6 @@ package com.smartchain.server.integration
 import com.google.gson.Gson
 import com.smartchain.server.controller.UserController
 import com.smartchain.server.entity.User
-import com.smartchain.server.entity.config.InstanceConfig
 import com.smartchain.server.entity.input.Access
 import com.smartchain.server.entity.input.SendAccessInfo
 import io.restassured.RestAssured
@@ -11,7 +10,6 @@ import io.restassured.http.ContentType
 import io.restassured.response.ValidatableResponse
 import org.apache.http.HttpStatus
 import org.hamcrest.CoreMatchers.isA
-import org.hamcrest.Matchers.hasSize
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -49,18 +47,6 @@ class UserControllerIntegrationTest {
         val response = mockGetRequest(testBody, testRoute)
         response.statusCode(HttpStatus.SC_OK)
                 .body(isA(String::class.java))
-    }
-
-    @Test
-    fun shouldReturnInfo() {
-        /*Define Test Parameters*/
-        val testBody = ""
-        val testRoute = "/client/info"
-
-        /*Make Request*/
-        val response = mockGetRequest(testBody, testRoute)
-        response.statusCode(HttpStatus.SC_OK)
-                .body("$", hasSize<InstanceConfig>(1))
     }
 
     @Test
