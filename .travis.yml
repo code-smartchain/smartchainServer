@@ -44,7 +44,7 @@ install:
 
 script:
   - gradle dependencies
-  - grade build
+  - gradle build
   - gradle test
 
 before_deploy:
