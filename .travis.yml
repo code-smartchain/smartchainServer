@@ -21,7 +21,7 @@ services:
 # Set env vars
 env:
   global:
-    - PROJECT_NAME_STG=SmartChainServer
+    - PROJECT_NAME_STG=smartchainserver
     - CLUSTER_NAME_STG=smart-chain-server-cluster
     - CLOUDSDK_COMPUTE_ZONE=europe-west3-b
     - DOCKER_IMAGE_NAME=appexample
