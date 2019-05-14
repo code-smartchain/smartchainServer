@@ -30,9 +30,13 @@ env:
     - NODE_ENV=CI
 
 before_install:
-  - cd ./server/
-  - gradle wrapper
-  - cd ..
+  # Download desired version of Gradle
+  - wget http://services.gradle.org/distributions/gradle-5.2.1-all.zip
+  - unzip -qq gradle-5.2.1-all.zip
+  - export GRADLE_HOME=$PWD/gradle5.2.1-5.2.1
+  - export PATH=$GRADLE_HOME/bin:$PATH
+
+  # Download desired version of Rust
   - wget https://github.com/holochain/holochain-rust/releases/download/v0.0.8-alpha/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz -O /tmp/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz
   - tar -xvf /tmp/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz
   - mv cli-v0.0.8-alpha-x86_64-apple-darwin hc

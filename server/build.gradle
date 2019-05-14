@@ -6,14 +6,6 @@ plugins {
 
 apply plugin: 'io.spring.dependency-management'
 
-check.doFirst {
-    println "Running gradle v${project.gradle.gradleVersion}"
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '5.2.1'
-}
-
 group = 'com.smartchain'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
