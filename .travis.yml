@@ -1,0 +1,62 @@
+# Use Dockerized infrastructure
+sudo: false
+
+# Use java for kotlin environnement
+language: java
+jdk:
+  - oraclejdk8
+
+# Cache Gcloud SDK between commands
+cache:
+  directories:
+    - "$HOME/google-cloud-sdk/"
+
+# Install services
+services:
+  - docker
+
+# Set env vars
+env:
+  global:
+    - PROJECT_NAME_STG=SmartChainServer
+    - CLUSTER_NAME_STG=smart-chain-server-cluster
+    - CLOUDSDK_COMPUTE_ZONE=europe-west3-b
+    - DOCKER_IMAGE_NAME=appexample
+    - KUBE_DEPLOYMENT_NAME=appexample
+    - KUBE_DEPLOYMENT_CONTAINER_NAME=appexample
+    - NODE_ENV=CI
+
+before_install:
+  - chmod +x gradlew
+  - chmod +x gradle/wrapper/gradle-wrapper.jar
+
+  - wget https://github.com/holochain/holochain-rust/releases/download/v0.0.8-alpha/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz -O /tmp/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz
+  - tar -xvf /tmp/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz
+  - mv cli-v0.0.8-alpha-x86_64-apple-darwin hc
+  - export PATH=$PWD/hc:$PATH
+
+install:
+  - curl https://sh.rustup.rs -sSf | sh
+  - rustup toolchain install nightly-2019-01-24
+  - rustup default nightly-2019-01-24
+  - rustup target add wasm32-unknown-unknown --toolchain nightly-2019-01-24
+
+script:
+  - gradle dependencies
+  - grade build
+  - gradle test
+
+before_deploy:
+  - if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
+  - source /home/travis/google-cloud-sdk/path.bash.inc
+  - gcloud --quiet version
+  - gcloud --quiet components update
+  - gcloud --quiet components beta update
+  - gcloud --quiet components update kubectl
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    skip_cleanup: true
+    on:
+      branch: development
