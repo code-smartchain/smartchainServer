@@ -33,6 +33,8 @@ dependencies {
     implementation group: 'com.github.markaren.YAJ-RPC', name: 'yaj-rpc-http', version: yajrpc_version
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.rest-assured:rest-assured:3.3.0'
+    testImplementation 'com.nhaarman:mockito-kotlin:1.6.0'
 }
 
 compileKotlin {

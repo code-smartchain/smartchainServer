@@ -15,7 +15,7 @@ class UserController {
 
     @GetMapping("/new")
     fun registerNewClient (): ResponseEntity<*> {
-        val userInstanceId = userService.registerUser2()
+        val userInstanceId = userService.registerUser()
 
         return ResponseEntity.ok().body(userInstanceId)
     }
@@ -30,7 +30,7 @@ class UserController {
     @PostMapping("/call/create_access/{agentAnimal}")
     fun createAccess (@PathVariable agentAnimal: String, @RequestBody access: Access): ResponseEntity<*> {
         val response = userService.createAccess(access, agentAnimal)
-
+        println(response)
         return ResponseEntity.ok().body(response)
     }
 

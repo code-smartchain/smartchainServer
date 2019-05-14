@@ -1,19 +1,10 @@
 package com.smartchain.server.service
 
-import com.smartchain.server.entity.Ok
-import com.smartchain.server.entity.Success
-import com.smartchain.server.entity.config.AgentConfig
-import com.smartchain.server.entity.config.InstanceConfig
-import com.smartchain.server.entity.config.InterfaceConfig
-import info.laht.yajrpc.RpcParams
-import info.laht.yajrpc.YAJRPC
-
 class AdminConductor (
         private val ws: RpcWs
-) {
+) {/*
 
     fun startNewAgent(agentConfig: AgentConfig, instanceConfig: InstanceConfig, interfaceConfig: InterfaceConfig) {
-
         addAgent(agentConfig)
         addInstance(instanceConfig)
         startInstance(instanceConfig.id)
@@ -70,5 +61,5 @@ class AdminConductor (
         )
 
         val response =  ws.call("admin/interface/add_instance", params, Success::class.java)
-    }
+    }*/
 }
