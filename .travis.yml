@@ -30,13 +30,10 @@ env:
     - NODE_ENV=CI
 
 before_install:
-  # Download desired version of Gradle
-  - wget http://services.gradle.org/distributions/gradle-5.2.1-all.zip
-  - unzip -qq gradle-5.2.1-all.zip
-  - export GRADLE_HOME=$PWD/gradle5.2.1-5.2.1
+  - wget http://services.gradle.org/distributions/gradle-5.3-bin.zip
+  - unzip -qq gradle-5.3-bin.zip
+  - export GRADLE_HOME=$PWD/gradle-5.3
   - export PATH=$GRADLE_HOME/bin:$PATH
-  - source ~/.profile
-  # just to test gradle version, against our provided one
   - gradle -v
 
   # Download desired version of Rust
