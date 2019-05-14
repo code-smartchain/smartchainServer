@@ -35,6 +35,8 @@ before_install:
   - unzip -qq gradle-5.2.1-all.zip
   - export GRADLE_HOME=$PWD/gradle5.2.1-5.2.1
   - export PATH=$GRADLE_HOME/bin:$PATH
+  # just to test gradle version, against our provided one
+  - gradle -v
 
   # Download desired version of Rust
   - wget https://github.com/holochain/holochain-rust/releases/download/v0.0.8-alpha/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz -O /tmp/cli-v0.0.8-alpha-x86_64-apple-darwin.tar.gz
@@ -51,6 +53,8 @@ install:
 
 script:
   - cd ./server
+  # just to test gradle version, against our provided one
+  - gradle -v
   - gradle dependencies
   - gradle build
   - gradle test
