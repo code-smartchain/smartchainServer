@@ -43,6 +43,7 @@ install:
   - rustup target add wasm32-unknown-unknown --toolchain nightly-2019-01-24
 
 script:
+  - cd ./server
   - gradle dependencies
   - gradle build
   - gradle test
