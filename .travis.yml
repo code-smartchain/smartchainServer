@@ -35,6 +35,7 @@ before_install:
   - unzip -qq gradle-5.2.1-all.zip
   - export GRADLE_HOME=$PWD/gradle5.2.1-5.2.1
   - export PATH=$GRADLE_HOME/bin:$PATH
+  - source ~/.profile
   # just to test gradle version, against our provided one
   - gradle -v
 
