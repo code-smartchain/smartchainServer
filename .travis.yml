@@ -37,6 +37,7 @@ before_install:
 
 install:
   - curl https://sh.rustup.rs -sSf | bash -s -- -y
+  - source $HOME/.cargo/env
   - rustup toolchain install nightly-2019-01-24
   - rustup default nightly-2019-01-24
   - rustup target add wasm32-unknown-unknown --toolchain nightly-2019-01-24
