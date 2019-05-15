@@ -1,7 +1,10 @@
 package com.smartchain.server.utils
 
-import java.io.*
-import java.util.ArrayList
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStream
+import java.io.InputStreamReader
+import java.util.*
 
 class Utils {
     fun getAnimals(): MutableList<String> {
@@ -12,8 +15,8 @@ class Utils {
             input = this.javaClass.getResourceAsStream("/animals.txt")
             // load the properties file
             val br = BufferedReader(InputStreamReader(input, "UTF-8"))
-            val line = br.readLine()
-            animals.add(line)
+            val lines = br.readLines()
+            animals.addAll(lines)
 
         } catch (ex: IOException) {
             ex.printStackTrace()
