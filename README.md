@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/code-smartchain/smartchainServer.svg?branch=master)](https://travis-ci.com/code-smartchain/smartchainServer)
 # Smartchain Server
 The BackendServer connecting the WebUI with the smartchainhApp
 
