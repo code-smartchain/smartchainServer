@@ -5,6 +5,7 @@ import com.smartchain.server.entity.config.InstanceConfig
 import com.smartchain.server.entity.config.WebSocketConfig
 import com.smartchain.server.entity.input.Access
 import com.smartchain.server.entity.input.SendAccessInfo
+import com.smartchain.server.utils.Utils
 import info.laht.yajrpc.RpcParams
 import java.io.BufferedReader
 import java.io.File
@@ -30,7 +31,8 @@ class UserService {
 
     private var bootstrapNode = ""
     val registeredUser = mutableMapOf<String, User>()
-    private var animals = File("animals.txt").bufferedReader().readLines().toMutableList()
+    private var fileUtils : Utils = Utils()
+    private var animals = fileUtils.getAnimals()
 
     fun registerUser(): String {
         val newIndex = registeredUser.size
