@@ -7,6 +7,7 @@ import com.smartchain.server.entity.input.Access
 import com.smartchain.server.entity.input.SendAccessInfo
 import com.smartchain.server.service.RpcWsInterface
 import com.smartchain.server.service.UserService
+import com.smartchain.server.utils.Utils
 import info.laht.yajrpc.RpcParams
 import junit.framework.Assert.*
 import org.junit.Test
@@ -24,7 +25,8 @@ import java.io.File
 class UserServiceTests {
 
     var testUserService = UserService()
-    val allAnimals = File("animals.txt").bufferedReader().readLines().toMutableList()
+    val utils = Utils()
+    val allAnimals = utils.getAnimals()
 
     @Test
     fun registerUser_Result_Test() {
