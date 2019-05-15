@@ -9,7 +9,7 @@ class Utils {
         val animals = ArrayList<String>()
 
         try {
-            input = FileInputStream("animals.txt")
+            input = this.javaClass.getResourceAsStream("/animals.txt")
             // load the properties file
             val br = BufferedReader(InputStreamReader(input, "UTF-8"))
             val line = br.readLine()
