@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk8:latest
     WORKDIR /home
     COPY server/build/libs ./server
-    COPY server/animal.txt ./server
-    COPY server/starthApp.sh ./server
-    COPY server/startInstance.sh ./server
+    ADD  ./server/animal.txt ./server
+    ADD  ./server/starthApp.sh ./server
+    ADD  ./server/startInstance.sh ./server
     CMD ["java", "-jar", "server-0.0.1-SNAPSHOT.jar"]
