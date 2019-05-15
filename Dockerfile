@@ -4,4 +4,4 @@ FROM adoptopenjdk/openjdk8:latest
     ADD  ./server/animals.txt ./server
     ADD  ./server/starthApp.sh ./server
     ADD  ./server/startInstance.sh ./server
-    CMD ["java", "-jar", "server-0.0.1-SNAPSHOT.jar"]
+    CMD ["java", "-jar", "./server/server-0.0.1-SNAPSHOT.jar"]
