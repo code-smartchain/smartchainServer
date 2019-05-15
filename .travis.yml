@@ -55,7 +55,6 @@ script:
   - gradle -v
   - gradle dependencies
   - gradle build
-  - gradle test
   - cd ..
   - pwd
 

@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "Configuring Docker"
+chmod +x ./server/configDocker.sh
+sh ./server/configDocker.sh
+
 echo "Killing the previous running processes: $( pgrep holochain )"
 pgrep holochain | xargs kill -15
 pgrep node | xargs kill -15
