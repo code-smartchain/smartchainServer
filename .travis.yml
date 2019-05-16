@@ -25,8 +25,8 @@ env:
     - CLUSTER_NAME_STG=smart-chain-server-cluster
     - CLOUDSDK_COMPUTE_ZONE=europe-west3-b
     - DOCKER_IMAGE_NAME=appexample
-    - KUBE_DEPLOYMENT_NAME=appexample
-    - KUBE_DEPLOYMENT_CONTAINER_NAME=appexample
+    - KUBE_DEPLOYMENT_NAME=backend
+    - KUBE_DEPLOYMENT_CONTAINER_NAME=backend
     - NODE_ENV=CI
 
 before_install:
