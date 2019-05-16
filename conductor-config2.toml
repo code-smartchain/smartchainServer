@@ -4,8 +4,8 @@
 [[agents]]
 id = "test_agent1"
 name = "Tester1"
-public_address = "HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz"
-keystore_file = "../server/keys/HcSCIdoUOoD6apne5n3IZ9mgySj4G366x758k87km37cw54j4zs3O4BpytWu3hz"
+public_address = "HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"
+keystore_file = "../server/keys/HcSCIaRpUfTw6jqrun3d4QEsg7TIu3e7ufKDmR786b8ajkg4u6nvBpfYesuywoz"
 
 # -----------  DNA  -----------
 
@@ -27,7 +27,7 @@ type = "memory"
 id = "websocket_interface"
 [interfaces.driver]
 type = "websocket"
-port = 8890
+port = 8889
 [[interfaces.instances]]
 id = "smartchain"
 
