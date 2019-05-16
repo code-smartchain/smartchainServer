@@ -52,5 +52,5 @@ compileTestKotlin {
 }
 
 task starthApp (type: Exec) {
-    commandLine "sh", "starthApp.sh"
+    commandLine "sh", "starthAppGradle.sh"
 }
