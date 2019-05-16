@@ -24,9 +24,7 @@ env:
     - PROJECT_NAME_STG=smartchainserver
     - CLUSTER_NAME_STG=smart-chain-server-cluster
     - CLOUDSDK_COMPUTE_ZONE=europe-west3-b
-    - DOCKER_IMAGE_NAME=appexample
-    - KUBE_DEPLOYMENT_NAME=backend
-    - KUBE_DEPLOYMENT_CONTAINER_NAME=backend
+    - DOCKER_IMAGE_NAME=backend
     - NODE_ENV=CI
 
 before_install:
@@ -50,6 +48,7 @@ install:
   - rustup target add wasm32-unknown-unknown --toolchain nightly-2019-01-24
 
 script:
+  - if [ $TRAVIS_BRANCH = "staging" ]; then export DOCKER_IMAGE_NAME=backend-test; fi 
   - cd ./server
   # just to test gradle version, against our provided one
   - gradle -v
@@ -70,4 +69,5 @@ deploy:
     script: chmod +x ./deploy.sh && ./deploy.sh
     skip_cleanup: true
     on:
-      branch: master
+      all_branches: true
+      condition: $TRAVIS_BRANCH =~ ^staging|master$
